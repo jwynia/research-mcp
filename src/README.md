@@ -119,6 +119,19 @@ REQUEST_DELAY_MS=2000
   - Research reports automatically extract and archive cited URLs in the background.
   - See `context-network/planning/research-archive-indexing.md` for future plans on search and indexing.
 
+## Client Configuration
+Add this to your MCP configuration. If you are running your Cline/Roo/etc project inside a devcontainer, make sure to switch to host.docker.internal instead of localhost.
+
+```
+{
+  "mcpServers": {
+    "Research": {
+      "timeout": 1800,
+      "url": "http://localhost:3100/mcp-sse",
+      "transportType": "sse"
+    }
+}
+```
 
 ## License
 
