@@ -16,8 +16,8 @@ services:
       - ./src/.env
     volumes:
       # For persistent storage of research archives
-      - ./research-data:/app/research-archive
-      - ./url-content:/app/url-content-archive
+      - ./data/research-data:/app/research-archive
+      - ./data/url-content:/app/url-content-archive
     healthcheck:
       test: ["CMD", "wget", "-qO-", "http://localhost:3100/health"]
       interval: 30s
