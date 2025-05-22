@@ -1,0 +1,15 @@
+{
+  "url": "https://live.paloaltonetworks.com/t5/community-blogs/mcp-security-exposed-what-you-need-to-know-now/ba-p/1227143",
+  "title": "MCP Security Exposed: What You Need to Know Now",
+  "capturedAt": "2025-05-22T02:19:25.508Z",
+  "contentType": "text/html;charset=UTF-8",
+  "author": "xzou",
+  "excerpt": "MCP Security Exposed: What You Need to Know Now     Executive Summary    The Model Context Protocol (MCP), developed by Anthropic, provides a standardized approach to integrating artificial intelligence systems with external data sources, tools, and applications. This protocol significantly reduces ...",
+  "siteName": null,
+  "length": 23381,
+  "source": {
+    "type": "research_citation",
+    "id": "fc0150fe6b530159",
+    "topic": "The impact of MCP (Model Context Protocol) on AI system integration"
+  }
+}

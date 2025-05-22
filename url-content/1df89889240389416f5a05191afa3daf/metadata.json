@@ -1,0 +1,15 @@
+{
+  "url": "https://www.pillar.security/blog/the-security-risks-of-model-context-protocol-mcp",
+  "title": "The Security Risks of Model Context Protocol (MCP)",
+  "capturedAt": "2025-05-22T02:19:24.096Z",
+  "contentType": "text/html",
+  "author": null,
+  "excerpt": "The Model Context Protocol (MCP) is an open standard designed to enable AI assistants to interact with external tools and services on behalf of users. Launched by Anthropic in November 2024, MCP standardizes how applications provide context to LLMs - think of it like a \"USB-C port for AI applications.\"",
+  "siteName": null,
+  "length": 8359,
+  "source": {
+    "type": "research_citation",
+    "id": "fc0150fe6b530159",
+    "topic": "The impact of MCP (Model Context Protocol) on AI system integration"
+  }
+}

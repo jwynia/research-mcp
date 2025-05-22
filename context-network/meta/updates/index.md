@@ -22,6 +22,14 @@ Updates related to the actual content, information, and documentation within the
 
 ## Recent Updates
 
+### Docker Implementation - 2025-05-21
+**Category:** Infrastructure
+**Status:** Completed
+
+Added Docker and docker-compose configuration for containerized deployment of the Research MCP project, following best practices for Node.js applications.
+
+[Link to full update](./infrastructure/docker_implementation.md)
+
 ### Research MCP Documentation Update - 2025-05-21
 **Category:** Content
 **Status:** Completed

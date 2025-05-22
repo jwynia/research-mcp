@@ -133,6 +133,45 @@ Add this to your MCP configuration. If you are running your Cline/Roo/etc projec
 }
 ```
 
+## Docker Deployment
+
+This project includes Docker support for easy deployment:
+
+### Using Docker Compose (Recommended)
+
+From the project root directory:
+
+```bash
+# Configure environment
+cp .env.example .env
+# Edit .env with your API keys
+
+# Build and start with Docker Compose
+docker-compose up -d
+```
+
+### Manual Docker Build
+
+If you prefer to build the Docker image manually:
+
+```bash
+# Build the image
+docker build -t research-mcp .
+
+# Run the container
+docker run -d \
+  --name research-mcp \
+  -p 3100:3100 \
+  -v $(pwd)/research-archive:/app/research-archive \
+  -v $(pwd)/url-content-archive:/app/url-content-archive \
+  --env-file .env \
+  research-mcp
+```
+
+### Docker Environment Variables
+
+All environment variables from the .env file are passed to the Docker container. See the Environment Variables section above for details.
+
 ## License
 
 MIT

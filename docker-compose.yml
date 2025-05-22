@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  research-mcp:
+    build:
+      context: ./src
+      dockerfile: Dockerfile
+    image: research-mcp:latest
+    container_name: research-mcp
+    restart: unless-stopped
+    ports:
+      - "3100:3100"
+    environment:
+      - NODE_ENV=production
+    env_file:
+      - ./src/.env
+    volumes:
+      # For persistent storage of research archives
+      - ./research-data:/app/research-archive
+      - ./url-content:/app/url-content-archive
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:3100/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s

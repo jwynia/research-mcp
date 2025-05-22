@@ -95,6 +95,7 @@ src/
 | Content Extraction | Cheerio, PDF/DOCX parsers | Enables efficient extraction of content from various document formats |
 | Protocol | MCP (SSE Transport) | Standard protocol for AI tool integration, allowing seamless use by assistants |
 | Development | TypeScript, Node.js | Type safety, modern JavaScript features, and robust ecosystem |
+| Deployment | Docker, docker-compose | Containerization for consistent environments and simplified deployment |
 | Storage | File-based archiving | Simple, reliable storage of research outputs without database dependencies |
 
 ### Implementation Characteristics

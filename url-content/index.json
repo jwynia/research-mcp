@@ -1,0 +1,88 @@
+[
+  {
+    "hash": "903a40446623f827d2cb6767046ddd0e",
+    "url": "https://modelcontextprotocol.io/specification/2025-03-26",
+    "title": "Specification - Model Context Protocol",
+    "capturedAt": "2025-05-22T02:19:20.997Z",
+    "source": {
+      "type": "research_citation",
+      "id": "fc0150fe6b530159",
+      "topic": "The impact of MCP (Model Context Protocol) on AI system integration"
+    }
+  },
+  {
+    "hash": "024cdc8f79037699d4d1b88367b5cf66",
+    "url": "https://www.byteplus.com/en/topic/541227",
+    "title": "Key Insights & Best Practices",
+    "capturedAt": "2025-05-22T02:19:22.438Z",
+    "source": {
+      "type": "research_citation",
+      "id": "fc0150fe6b530159",
+      "topic": "The impact of MCP (Model Context Protocol) on AI system integration"
+    }
+  },
+  {
+    "hash": "6093d0fe42ce87c5a521836fc14eb606",
+    "url": "https://techcommunity.microsoft.com/blog/azure-ai-services-blog/model-context-protocol-mcp-integrating-azure-openai-for-enhanced-tool-integratio/4393788",
+    "title": "Model Context Protocol (MCP): Integrating Azure OpenAI for Enhanced Tool Integration and Prompting",
+    "capturedAt": "2025-05-22T02:19:23.589Z",
+    "source": {
+      "type": "research_citation",
+      "id": "fc0150fe6b530159",
+      "topic": "The impact of MCP (Model Context Protocol) on AI system integration"
+    }
+  },
+  {
+    "hash": "1df89889240389416f5a05191afa3daf",
+    "url": "https://www.pillar.security/blog/the-security-risks-of-model-context-protocol-mcp",
+    "title": "The Security Risks of Model Context Protocol (MCP)",
+    "capturedAt": "2025-05-22T02:19:24.096Z",
+    "source": {
+      "type": "research_citation",
+      "id": "fc0150fe6b530159",
+      "topic": "The impact of MCP (Model Context Protocol) on AI system integration"
+    }
+  },
+  {
+    "hash": "6255b924191eef485fb10a3cfce3855b",
+    "url": "https://live.paloaltonetworks.com/t5/community-blogs/mcp-security-exposed-what-you-need-to-know-now/ba-p/1227143",
+    "title": "MCP Security Exposed: What You Need to Know Now",
+    "capturedAt": "2025-05-22T02:19:25.508Z",
+    "source": {
+      "type": "research_citation",
+      "id": "fc0150fe6b530159",
+      "topic": "The impact of MCP (Model Context Protocol) on AI system integration"
+    }
+  },
+  {
+    "hash": "76b2179014de8fbee823ac9d13db4624",
+    "url": "https://www.philschmid.de/mcp-introduction",
+    "title": "Model Context Protocol (MCP) an overview",
+    "capturedAt": "2025-05-22T02:19:25.784Z",
+    "source": {
+      "type": "research_citation",
+      "id": "fc0150fe6b530159",
+      "topic": "The impact of MCP (Model Context Protocol) on AI system integration"
+    }
+  },
+  {
+    "hash": "82b3bbfbc14409b48e75ca61190d2d32",
+    "url": "https://newsletter.pragmaticengineer.com/p/mcp",
+    "title": "MCP Protocol: a new AI dev tools building block",
+    "capturedAt": "2025-05-22T02:19:26.143Z",
+    "source": {
+      "type": "research_citation",
+      "id": "fc0150fe6b530159",
+      "topic": "The impact of MCP (Model Context Protocol) on AI system integration"
+    }
+  },
+  {
+    "hash": "c984d06aafbecf6bc55569f964148ea3",
+    "url": "https://example.com",
+    "title": "Example Domain",
+    "capturedAt": "2025-05-22T02:20:46.928Z",
+    "source": {
+      "type": "direct_request"
+    }
+  }
+]
