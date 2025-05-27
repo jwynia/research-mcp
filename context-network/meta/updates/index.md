@@ -22,6 +22,22 @@ Updates related to the actual content, information, and documentation within the
 
 ## Recent Updates
 
+### Transaction Management Fix - 2025-05-26
+**Category:** Infrastructure
+**Status:** Planned
+
+Fixed a critical issue in the search indexing system where nested transactions were causing the indexing process to fail with the error: "cannot start a transaction within a transaction". The solution modifies the transaction management approach to prevent nested transactions while maintaining backward compatibility.
+
+[Link to full update](./infrastructure/transaction_fix.md)
+
+### Search Indexing Implementation - 2025-05-26
+**Category:** Infrastructure
+**Status:** Planned
+
+Added a file-based search indexing system using SQLite with FTS5 to make research-archive and url-content-archive contents searchable and usable for augmenting future research requests. The solution emphasizes quality over performance, periodic indexing, and citation traceability.
+
+[Link to full update](./infrastructure/search_indexing_implementation.md)
+
 ### Docker Implementation - 2025-05-21
 **Category:** Infrastructure
 **Status:** Completed
@@ -56,8 +72,10 @@ To find updates, first identify the relevant category, then navigate to the appr
 
 ## Metadata
 - **Created:** 2025-05-21
-- **Last Updated:** 2025-05-21
-- **Updated By:** Cline
+- **Last Updated:** 2025-05-26
+- **Updated By:** Architect Agent
 
 ## Change History
 - 2025-05-21: Initial creation of updates index
+- 2025-05-26: Added search indexing implementation update
+- 2025-05-26: Added transaction management fix update
