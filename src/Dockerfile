@@ -2,6 +2,8 @@
 FROM node:20-alpine AS builder
 
 WORKDIR /build
+# Add build dependencies for better-sqlite3
+RUN apk add --no-cache python3 make g++ build-base
 COPY package*.json ./
 RUN npm ci
 COPY . .
@@ -11,6 +13,8 @@ RUN npm run build
 FROM node:20-alpine
 
 WORKDIR /app
+# Add runtime dependencies for SQLite
+RUN apk add --no-cache sqlite
 COPY package*.json ./
 RUN npm ci --omit=dev && npm cache clean --force
 
@@ -20,7 +24,7 @@ COPY --from=builder /build/dist ./dist
 COPY .env.example ./.env.example
 
 # Create and set permissions for data directories
-RUN mkdir -p ./research-archive ./url-content-archive \
+RUN mkdir -p ./data/research-archive ./data/url-content-archive \
     && chown -R node:node /app
 
 # Use non-root user for security

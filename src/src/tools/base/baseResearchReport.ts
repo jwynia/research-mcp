@@ -152,7 +152,7 @@ export function createResearchReportTool(config: ResearchReportConfig) {
         }
 
         const data = await response.json();
-        const result = data.choices[0].message.content;
+        let result = data.choices[0].message.content;
 
         console.log(`Generated research report (${result.length} chars)`);
 
@@ -178,6 +178,38 @@ export function createResearchReportTool(config: ResearchReportConfig) {
             // Fire and forget - don't await
             processUrlsInBackground(urls, queryHash, args.topic)
               .catch(error => console.error('Background URL processing error:', error));
+          }
+        }
+
+        // Append citation references if they exist in the data
+        if (data.citations && data.citations.length > 0 && data.search_results && data.search_results.length > 0) {
+          console.log(`Appending ${data.citations.length} citations to the research report`);
+          
+          // Add a References section if the content doesn't already have one
+          if (!result.toLowerCase().includes("## references") && !result.toLowerCase().includes("### references")) {
+            result += "\n\n## References\n";
+          }
+          
+          // Create citation reference links in markdown format
+          const citationLinks: string[] = [];
+          
+          // Map each citation URL to its corresponding search result for more detailed references
+          data.citations.forEach((url: string, index: number) => {
+            const citationNumber = index + 1;
+            // Find matching search result for this URL
+            const searchResult = data.search_results.find((sr: any) => sr.url === url);
+            
+            if (searchResult) {
+              citationLinks.push(`[${citationNumber}]: ${url} "${searchResult.title}${searchResult.date ? ` (${searchResult.date})` : ''}"`);
+            } else {
+              // Fallback if no matching search result
+              citationLinks.push(`[${citationNumber}]: ${url}`);
+            }
+          });
+          
+          // Append the citation links to the result
+          if (citationLinks.length > 0) {
+            result += "\n\n" + citationLinks.join("\n");
           }
         }
 
